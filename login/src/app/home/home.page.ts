@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  //esto tengo que poner en el componente login
 
+  constructor(public navCtrl: NavController) {}
+
+    goLogin() {
+    }
 }

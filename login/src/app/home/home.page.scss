@@ -6,26 +6,51 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+}
+
+#container ion-button{
+
+  position: center;
+
 }
 
 #container strong {
   font-size: 20px;
+  color: #ffffff;
   line-height: 26px;
 }
 
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
+
 }
 
 #container a {
   text-decoration: none;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
+ion-toolbar ion-title{
+  color: #FFFFFF;
+
+}
+
+img{
+  border-radius: 118px;
+  width: 293px;
+  height: 184px;
+}
+
+ion-toolbar {
+  color: #FFFFFF;
+  background: #334861;
+  --background: blue();
+
+}
+ion-content{
+  --background: blue();
+  background: #4B6584;
 }

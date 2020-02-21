@@ -1,8 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home Lit
     </ion-title>
+    <ion-buttons slot="end" >
+      <ion-button
+              class="nav-item nav-link-edit" [routerLink]="['/home','login']"
+              (click)="goLogin()">
+        Login
+      </ion-button>
+      <ion-button class="nav-item nav-link-edit" [routerLink]="['/home','registro']" >
+        Register
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +24,11 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Welcome to the Home lit</strong>
+      <p>
+          <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/luxury-house-at-night-mike-penney.jpg"
+          alt="">
+      </p>
+
   </div>
 </ion-content>

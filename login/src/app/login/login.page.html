@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Log in
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">
+      Correoelectrónico: </ion-label>
+    <ion-input type="text"
+               name="correo"
+               required
+               email="true"
+               placeholder="Ej: Cristianflores@gmail.com"
+               title="Llenar correo"
+               [(ngModel)]="usuario.correo"
+               #correoInput="ngModel"
+    >
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">
+      Contraseña: </ion-label>
+    <ion-input type="password"
+               name="password"
+               required
+               pattern="[0-9]+"
+               placeholder="Ej: claveSecreta123"
+               title="Llenar contraseña"
+               [(ngModel)]="usuario.password"
+               #passwordInput="ngModel"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="full">
+    Entrar
+  </ion-button>
+
+
+
+
+</ion-content>

@@ -84,6 +84,9 @@ void loop(){
             client.println("Content-type:text/html");
             client.println("Connection: close");
             client.println();
+            Serial.println("---------------- Quejejto? -----------------");
+            Serial.println(header);
+            Serial.println("--------------------------------------------");
             
             // turns the GPIOs on and off
             if (header.indexOf("GET /5/on") >= 0) {
